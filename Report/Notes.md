@@ -22,7 +22,7 @@ GROUP BY category_name
 ORDER BY total_rent DESC;
 ```
 
-4.2 Ventas totales por tienda, donde se pueda observar la ciudad, el pais (concatenar la ciudad y el pais haciendo uso del separador ,) y el encargado. 
+4.2. Ventas totales por tienda, donde se pueda observar la ciudad, el pais (concatenar la ciudad y el pais haciendo uso del separador ,) y el encargado. 
 ```sql
 SELECT COUNT(*) AS total_rent , store.store_id AS store_id, city.city AS city, country.country AS country, staff.first_name AS manager_staff_first_name, staff.last_name AS manager_staff_last_name
 FROM rental
@@ -35,3 +35,5 @@ INNER JOIN country ON city.country_id = country.country_id
 GROUP BY store.store_id, manager_staff_first_name, manager_staff_last_name, city, country
 ORDER BY total_rent DESC;
 ```
+
+4.3. Lista de peliculas, donde se observe el identificador, el titulo, descripcion, categoria, precio, la duracion de la pelicula, clasificacion, nombre y apellidos de los actores.
