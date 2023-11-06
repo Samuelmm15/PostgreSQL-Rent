@@ -191,4 +191,13 @@ INSERT INTO film (title, description, release_year, language_id, rental_duration
 DELETE FROM film WHERE title = 'The Lord of the Rings: The Fellowship of the Ring';
 ```
 
+10. Significado y relevancia de las `sequence` en postgresql.
 
+Las `sequence` en postgresql son objetos que se utilizan para generar valores numéricos de manera secuencial. Estos valores pueden ser utilizados para generar valores de clave primaria o valores de cualquier otra columna.
+
+Es bastante útil e importante debido a que garantiza la unicidad y la no repetición de valores en una columna, sobre todo importante para el caso de las columnas de clave primaria o identificadores únicos.
+
+Un ejemplo de creación de una `sequence` en postgresql sería el siguiente:
+```sql
+CREATE SEQUENCE nombre_de_la_secuencia START 1 INCREMENT 2;
+```
