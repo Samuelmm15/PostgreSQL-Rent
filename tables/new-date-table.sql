@@ -1,0 +1,8 @@
+-- NEW TABLE THAT WILL BE USED TO STORE THE DATE AND TIME OF THE LAST UPDATE OF THE TABLE CALLED film
+
+DROP TABLE IF EXISTS updated_table_film CASCADE;
+
+CREATE TABLE updated_table_film (
+    id_updated_table_film SERIAL PRIMARY KEY,
+    last_update TIMESTAMP NOT NULL
+);

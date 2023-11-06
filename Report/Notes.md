@@ -114,3 +114,40 @@ INNER JOIN category ON film_category.category_id = category.category_id
 GROUP BY actor.actor_id, actor.first_name, actor.last_name, films_made
 ORDER BY actor.actor_id;
 ```
+
+6. Como realizar un análisis del modelo (preguntar en clase)
+
+7. Preguntar al profesor a que se refiere con la pregunta número 
+
+8. Contruir una nueva tabla que a partir de un disparador que cree, inserte un nuevo registro de mi nueva tabla la fecha en la que se inserto un nuevo registro dentro de la tabla film.
+
+Primero se realiza la implementación de la nueva tabla con la siguiente estructura:
+```sql
+CREATE TABLE updated_table_film (
+    id_updated_table_film SERIAL PRIMARY KEY,
+    last_update TIMESTAMP NOT NULL
+);
+```
+
+A continuación se crea la función junto con su correspondiente trigger:
+```sql
+-- First we create the function
+CREATE FUNCTION update_table_film() RETURNS TRIGGER AS $$
+    BEGIN
+        INSERT INTO updated_table_film (last_update) VALUES (NOW());
+        RETURN NEW;
+    END;
+$$ LANGUAGE plpgsql;
+
+-- Then we create the trigger
+CREATE TRIGGER trigger_update_table_film
+AFTER INSERT ON film
+FOR EACH ROW
+EXECUTE FUNCTION update_table_film();
+```
+
+Finalmente realizamos la insersión de una nueva fila a la tabla `film` para que se pueda comprobar el funcionamiento del correspondiente trigger:
+```sql
+INSERT INTO film (title, description, release_year, language_id, rental_duration, rental_rate, length, replacement_cost, rating, special_features)  VALUES ('The Lord of the Rings: The Fellowship of the Ring', 'A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron.', 2001, 1, 3, 4.99, 178, 19.99, 'PG-13', '{Behind the Scenes, Deleted Scenes}');
+```
+
