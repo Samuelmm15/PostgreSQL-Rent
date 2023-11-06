@@ -132,7 +132,7 @@ CREATE TABLE updated_table_film (
 A continuación se crea la función junto con su correspondiente trigger:
 ```sql
 -- First we create the function
-CREATE FUNCTION update_table_film() RETURNS TRIGGER AS $$
+CREATE FUNCTION delete_table_film() RETURNS TRIGGER AS $$
     BEGIN
         INSERT INTO updated_table_film (last_update) VALUES (NOW());
         RETURN NEW;
@@ -140,14 +140,55 @@ CREATE FUNCTION update_table_film() RETURNS TRIGGER AS $$
 $$ LANGUAGE plpgsql;
 
 -- Then we create the trigger
-CREATE TRIGGER trigger_update_table_film
+CREATE TRIGGER trigger_delete_table_film
 AFTER INSERT ON film
 FOR EACH ROW
-EXECUTE FUNCTION update_table_film();
+EXECUTE FUNCTION delete_table_film();
 ```
 
 Finalmente realizamos la insersión de una nueva fila a la tabla `film` para que se pueda comprobar el funcionamiento del correspondiente trigger:
 ```sql
 INSERT INTO film (title, description, release_year, language_id, rental_duration, rental_rate, length, replacement_cost, rating, special_features)  VALUES ('The Lord of the Rings: The Fellowship of the Ring', 'A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron.', 2001, 1, 3, 4.99, 178, 19.99, 'PG-13', '{Behind the Scenes, Deleted Scenes}');
 ```
+
+9. Crear un triger que almacene en una nueva tabla la fecha de cuando se eliminó un registro y el identificador de la fila eliminada de la tabla film.
+
+En primer lugar se realiza la creación de la nueva tabla que va a contener las distintas filas con la información de la fecha en la que se ha realizado la eliminación de filas de la tabla film y el identificador de la fila eliminada:
+```sql
+CREATE TABLE deleting_film_rows (
+    delete_id SERIAL PRIMARY KEY,
+    film_id INT NOT NULL,
+    last_update TIMESTAMP NOT NULL
+);
+```
+
+En segundo lugar realizamos la creación de la función que va a ser ejecutada por el trigger:
+```sql
+CREATE FUNCTION delete_table_film() RETURNS TRIGGER AS $$
+    BEGIN
+        INSERT INTO deleting_film_rows (film_id, last_update)
+        VALUES (OLD.film_id, NOW());
+        RETURN OLD;
+    END;
+$$ LANGUAGE plpgsql;
+```
+
+Finalmente realizamos la creación del trigger que va a ejecutar la función anteriormente creada:
+```sql
+  CREATE TRIGGER delete_film_trigger
+    AFTER DELETE ON film
+    FOR EACH ROW
+    EXECUTE PROCEDURE delete_table_film();
+```
+
+Para la comprobación del funcionamiento del trigger se realiza la creación y eliminación de múltiples filas de la tabla film:
+```sql
+INSERT INTO film (title, description, release_year, language_id, rental_duration, rental_rate, length, replacement_cost, rating, special_features)  VALUES ('The Lord of the Rings: The Fellowship of the Ring', 'A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron.', 2001, 1, 3, 4.99, 178, 19.99, 'PG-13', '{Behind the Scenes, Deleted Scenes}');
+DELETE FROM film WHERE title = 'The Lord of the Rings: The Fellowship of the Ring';
+INSERT INTO film (title, description, release_year, language_id, rental_duration, rental_rate, length, replacement_cost, rating, special_features)  VALUES ('The Lord of the Rings: The Fellowship of the Ring', 'A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron.', 2001, 1, 3, 4.99, 178, 19.99, 'PG-13', '{Behind the Scenes, Deleted Scenes}');
+DELETE FROM film WHERE title = 'The Lord of the Rings: The Fellowship of the Ring';
+INSERT INTO film (title, description, release_year, language_id, rental_duration, rental_rate, length, replacement_cost, rating, special_features)  VALUES ('The Lord of the Rings: The Fellowship of the Ring', 'A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron.', 2001, 1, 3, 4.99, 178, 19.99, 'PG-13', '{Behind the Scenes, Deleted Scenes}');
+DELETE FROM film WHERE title = 'The Lord of the Rings: The Fellowship of the Ring';
+```
+
 
