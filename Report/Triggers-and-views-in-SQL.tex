@@ -7,6 +7,8 @@
 \usepackage{float}
 \usepackage{titlesec}
 \usepackage{geometry}
+\usepackage{hyperref}
+
 
 % Configura los márgenes
 \geometry{
@@ -26,7 +28,7 @@
 	
 	% Portada del informe
 	
-	\title{Laboratorio virtual en IaaS de la ULL}
+	\title{Disparadores y Vistas en SQL}
 	\author{Samuel Martín Morales}
 	\date{\today}
 	
@@ -37,13 +39,28 @@
 	
 	% Secciones del informe
 	\chapter{Introducción}
-  Example....
-	
+  Para esta cuarta práctica de la asignatura \emph{Administración y Diseño de Bases de Datos} se solicita el empleo de una base de datos que debe de ser restaurada de manera previa a la implementación de una serie de ejercicios que son demandados haciendo uso de dicha base de datos.\\
+
+	En este caso, la base de datos a emplear se denomina como \emph{\textbf{alquilerdvd.tar}} y se encuentra disponible en el campus virtual de la asignatura. Pero, puede ser descargada desde el siguiente enlace de \href{https://github.com/Samuelmm15/PostgreSQL-Rent/blob/main/AlquilerPractica.tar}{GitHub}.\\
+
+	Dicha base de datos se encuentra en formato \emph{.tar} por lo que, para poder restaurarla, se debe de emplear el siguiente comando:
+
+	\begin{verbatim}
+		$ pg_restore -U postgres -d alquilerdvd alquilerdvd.tar
+	\end{verbatim}
+
+	Es decir, el comando anterior restaura la base de datos \emph{alquilerdvd} haciendo uso del fichero \emph{alquilerdvd.tar} y empleando el usuario \emph{postgres}.\\
+
+	Una vez restaurada la base de datos, se puede proceder a la realización de los distintos ejercicios.\\
+
 	\chapter{Resultados}
-	Example....
+	\section{Ejercicio 1}
 	
 	
 	\chapter{Conclusiones}
   Example....	
+
+	\chapter{Bibliografía}
+	Example....
 	
 \end{document}
