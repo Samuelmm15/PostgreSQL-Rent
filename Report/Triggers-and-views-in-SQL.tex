@@ -55,7 +55,32 @@
 
 	\chapter{Resultados}
 	\section{Ejercicio 1}
-	
+	Para el primer ejercicio de la práctica, se deben de identificar las distintas tablas, vistas y secuencias que tiene la base de datos que ha sido restaurada.\\
+
+	Tras la carga de la base de datos a partir del fichero con extensión \emph{.tar}, se puede observar que la base de datos \emph{alquilerdvd} cuenta con un total de 15 tablas, 4 vistas y 15 secuencias. Para poder visualizar todos estos datos comentados sobre la base de datos, se hace uso de la terminal interactiva de \emph{PostgreSQL}, es decir, de \emph{psql}, y, una vez dentro de la base de datos se ejecutan los siguientes comandos para obtener los distintos valores obsevados anteriormente:
+
+	\begin{verbatim}
+		# \dt 		-- Muestra las tablas de la base de datos 
+		# \dv		 -- Muestra las vistas de la base de datos
+		# \ds		 -- Muestra las secuencias de la base de datos
+	\end{verbatim}
+
+	\section{Ejercicio 2}
+	Tras la identificación de las distintas tablas más importantes de la base de datos junto con sus atributos  y relaciones entre las distintas tablas, se procede a la implementación de distintas consultas que permitan obtener aquella información que es solicitada en el enunciado del ejercicio.\\
+
+	\subsection{Ventas totales}
+	Para obtener las ventas totales por categoría de películas ordendas de manera descendente, se emplea la siguiente consulta:
+
+	\begin{verbatim}
+		SELECT COUNT(*) AS total_rent, category.name AS category_name
+		FROM rental
+		INNER JOIN inventory ON rental.inventory_id = inventory.inventory_id
+		INNER JOIN film ON inventory.film_id = film.film_id
+		INNER JOIN film_category ON film.film_id = film_category.film_id
+		INNER JOIN category ON film_category.category_id = category.category_id
+		GROUP BY category_name
+		ORDER BY total_rent DESC;
+	\end{verbatim}
 	
 	\chapter{Conclusiones}
   Example....	

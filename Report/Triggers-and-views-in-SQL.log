@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.2)  6 NOV 2023 19:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.2)  7 NOV 2023 09:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -388,6 +388,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 54--55
 
 ]
 Chapter 2.
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
+
+ []
+
 [3
 
 ]
@@ -400,21 +410,21 @@ Chapter 4.
 
 ] (./Triggers-and-views-in-SQL.aux)
 Package rerunfilecheck Info: File `Triggers-and-views-in-SQL.out' has not changed.
-(rerunfilecheck)             Checksum: 5EC58D1A8B58AF987525F240B9362651;520.
+(rerunfilecheck)             Checksum: 7B29AD0F36D9A05A106AD9AA175F1F6B;766.
  ) 
 Here is how much of TeX's memory you used:
- 11385 strings out of 478268
- 187249 string characters out of 5846348
- 475066 words of memory out of 5000000
- 29451 multiletter control sequences out of 15000+600000
- 475292 words of font info for 48 fonts, out of 8000000 for 9000
+ 11393 strings out of 478268
+ 187375 string characters out of 5846348
+ 478066 words of memory out of 5000000
+ 29457 multiletter control sequences out of 15000+600000
+ 475599 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 69i,7n,117p,419b,338s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 69i,7n,117p,601b,338s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Triggers-and-views-in-SQL.pdf (6 pages, 108078 bytes).
+Output written on Triggers-and-views-in-SQL.pdf (6 pages, 116285 bytes).
 PDF statistics:
- 102 PDF objects out of 1000 (max. 8388607)
- 77 compressed objects within 1 object stream
- 12 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 113 PDF objects out of 1000 (max. 8388607)
+ 88 compressed objects within 1 object stream
+ 14 named destinations out of 1000 (max. 500000)
+ 57 words of extra memory for PDF output out of 10000 (max. 10000000)
 
