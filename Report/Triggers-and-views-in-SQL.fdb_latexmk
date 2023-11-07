@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1699362437 "/Users/smartin/Desktop/P4-ADBD-Rent-Data-Base/Report/Triggers-and-views-in-SQL.tex" "Triggers-and-views-in-SQL.pdf" "Triggers-and-views-in-SQL" 1699362438
-  "/Users/smartin/Desktop/P4-ADBD-Rent-Data-Base/Report/Triggers-and-views-in-SQL.tex" 1699362437 9622 bda0b988ae387e41df43badd6cfab72d ""
+["pdflatex"] 1699386425 "/Users/smartin/Desktop/P4-ADBD-Rent-Data-Base/Report/Triggers-and-views-in-SQL.tex" "Triggers-and-views-in-SQL.pdf" "Triggers-and-views-in-SQL" 1699386427
+  "/Users/smartin/Desktop/P4-ADBD-Rent-Data-Base/Report/Triggers-and-views-in-SQL.tex" 1699386422 15504 d18994e62a8f8f24b96942ceab965c0a ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -86,10 +86,17 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1677759658 2826429 415d20a212ad2da3f74eddd860afc479 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "Triggers-and-views-in-SQL.aux" 1699362438 3229 23f63334be1d1cbe9cc0e65858210b4c "pdflatex"
-  "Triggers-and-views-in-SQL.out" 1699362438 2677 2cc53310429bded147c6fbda404b39ed "pdflatex"
-  "Triggers-and-views-in-SQL.tex" 1699362437 9622 bda0b988ae387e41df43badd6cfab72d ""
-  "Triggers-and-views-in-SQL.toc" 1699362438 1464 3dfdb069d131fbfb6e621c4632b9ff0a "pdflatex"
+  "Triggers-and-views-in-SQL.aux" 1699386427 5757 a13c49a442646754dfe657cf8a2f1fb8 "pdflatex"
+  "Triggers-and-views-in-SQL.out" 1699386427 2903 5d171737fdfa4b0e348755a17f85b887 "pdflatex"
+  "Triggers-and-views-in-SQL.tex" 1699386422 15504 d18994e62a8f8f24b96942ceab965c0a ""
+  "Triggers-and-views-in-SQL.toc" 1699386427 1610 df95ba718713636f9fc7f272a33e7b24 "pdflatex"
+  "img/Exercice-1-Comprobation.jpeg" 1699384704 174129 6b1c046dbf8ef5d48c6ca6854d647db9 ""
+  "img/Exercice-2.2.1-Comprobation.png" 1699385079 274593 3231035f67523c6040b0bdd2952d8c6d ""
+  "img/Exercice-2.2.2-Comprobation.png" 1699385296 277009 240d43ef6794cd16ac5db678ef83e0af ""
+  "img/Exercice-2.2.3-Comprobation.png" 1699385392 474584 7d021ef39b4c8dfe09906c01a072c62d ""
+  "img/Exercice-2.2.4-Comprobation.png" 1699385483 333253 7841a923171c01451d99651a7e634d25 ""
+  "img/Exercice-6-Comprobation.png" 1699385606 191069 4c2b2752ba9dd91daa477361198a5774 ""
+  "img/Exercice-7-Comprobation.png" 1699385706 140929 47891518c172c9728a881a09d06f1e64 ""
   (generated)
   "Triggers-and-views-in-SQL.aux"
   "Triggers-and-views-in-SQL.log"

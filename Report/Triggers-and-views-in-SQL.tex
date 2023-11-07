@@ -57,13 +57,22 @@
 	\section{Ejercicio 1}
 	Para el primer ejercicio de la práctica, se deben de identificar las distintas tablas, vistas y secuencias que tiene la base de datos que ha sido restaurada.\\
 
-	Tras la carga de la base de datos a partir del fichero con extensión \emph{.tar}, se puede observar que la base de datos \emph{alquilerdvd} cuenta con un total de 15 tablas, 4 vistas y 15 secuencias. Para poder visualizar todos estos datos comentados sobre la base de datos, se hace uso de la terminal interactiva de \emph{PostgreSQL}, es decir, de \emph{psql}, y, una vez dentro de la base de datos se ejecutan los siguientes comandos para obtener los distintos valores obsevados anteriormente:
+	Tras la carga de la base de datos a partir del fichero con extensión \emph{.tar}, se puede observar que la base de datos \emph{alquilerdvd} cuenta con un total de 15 tablas, 0 vistas y 15 secuencias. Para poder visualizar todos estos datos comentados sobre la base de datos, se hace uso de la terminal interactiva de \emph{PostgreSQL}, es decir, de \emph{psql}, y, una vez dentro de la base de datos se ejecutan los siguientes comandos para obtener los distintos valores obsevados anteriormente:
 
 	\begin{verbatim}
 		# \dt 		-- Muestra las tablas de la base de datos 
 		# \dv		 -- Muestra las vistas de la base de datos
 		# \ds		 -- Muestra las secuencias de la base de datos
 	\end{verbatim}
+
+	Para comprobar todo esto anterior se puede observar la siguiente imagen \ref{fig:Exercice-1}:
+
+	\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.4]{img/Exercice-1-Comprobation.jpeg}
+    \caption{Ejecución de los comandos dt, dv, ds en la terminal psql.}
+    \label{fig:Exercice-1}
+  \end{figure}
 
 	\section{Ejercicio 2}
 	Tras la identificación de las distintas tablas más importantes de la base de datos junto con sus atributos  y relaciones entre las distintas tablas, se procede a la implementación de distintas consultas que permitan obtener aquella información que es solicitada en el enunciado del ejercicio.\\
@@ -82,6 +91,15 @@
 		ORDER BY total_rent DESC;
 	\end{verbatim}
 
+	Resultado de la consulta anterior \ref{fig:Exercice-2-1}:
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.5]{img/Exercice-2.2.1-Comprobation.png}
+		\caption{Resultado de la consulta de las ventas totales por categoría.}
+		\label{fig:Exercice-2-1}
+	\end{figure}
+
 	\subsection{Ventas totales por tienda}
 	Para obtener las ventas totales por tienda donde se refleja la ciudad, el país y el encargado,  se emplea la siguiente consulta:
 
@@ -97,6 +115,15 @@
 	GROUP BY store.store_id, manager_staff_first_name, manager_staff_last_name, city, country
 	ORDER BY total_rent DESC;
 	\end{verbatim}
+
+	Resultado de la consulta anterior \ref{fig:Exercice-2-2}:
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.5]{img/Exercice-2.2.2-Comprobation.png}
+		\caption{Resultado de la consulta de las ventas totales por tienda.}
+		\label{fig:Exercice-2-2}
+	\end{figure}
 
 	\fbox{\parbox{\textwidth}{
     \textbf{Nota:} para la consulta anterior se ha empleado una concatenación de cadenas de caracteres para poder obtener la ciudad y el país en una misma columna, para ello, se ha hecho uso de la doble barra vertical  que permite establecer la concatenación por pares de elementos, y para el ejemplo de consulta observado anteriormente, se hace uso del separador \emph{","} para realizar esta operación.
@@ -116,6 +143,15 @@
 		ORDER BY film_id;
 	\end{verbatim}
 
+	Resultado de la consulta anterior \ref{fig:Exercice-2-3}:
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.5]{img/Exercice-2.2.3-Comprobation.png}
+		\caption{Resultado de la consulta de la lista de películas.}
+		\label{fig:Exercice-2-3}
+	\end{figure}
+
 	\subsection{información de los actores}
 	Para obtener información de los distintos actores junto con sus películas existentes en la base de datos, se implementa la siguiente consulta:
 
@@ -129,6 +165,15 @@
 		GROUP BY actor.actor_id, actor.first_name, actor.last_name, films_made
 		ORDER BY actor.actor_id;
 	\end{verbatim}
+
+	Resultado de la consulta anterior \ref{fig:Exercice-2-4}:
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.5]{img/Exercice-2.2.4-Comprobation.png}
+		\caption{Resultado de la consulta de la información de los actores.}
+		\label{fig:Exercice-2-4}
+	\end{figure}
 
 	\section{Ejercicio 3}
 	Implementación de todas las vistas a partir de las consultas realizadas en el ejercicio anterior.\\
@@ -199,11 +244,109 @@
 	\section{Ejercicio 5}
 
 	\section{Ejercicio 6}
+	Para el sexto ejercicio solicitado, se debe de contruir un disparador que se encargue de guardar en una nueva tabla creada la fecha de cuando se insertó un nuevo registro dentro de la tabla \emph{film}.\\
+
+	Cabe destacar que para la implementación de dicho disparador se ha creado de manera previa una nueva tabla denominada como \emph{updated-table-film}, la cual tiene la siguiente estructura:
+
+	\begin{verbatim}
+		CREATE TABLE updated_table_film (
+				id_updated_table_film SERIAL PRIMARY KEY,
+				last_update TIMESTAMP NOT NULL
+		);
+	\end{verbatim}
+
+	Una vez creada la tabla, se procede a la implementación del disparador, para ello se emplea la siguiente consulta:
+
+	\begin{verbatim}
+		-- First we create the function
+		CREATE FUNCTION delete_table_film() RETURNS TRIGGER AS $$
+				BEGIN
+						INSERT INTO updated_table_film (last_update) VALUES (NOW());
+						RETURN NEW;
+				END;
+		$$ LANGUAGE plpgsql;
+
+		-- Then we create the trigger
+		CREATE TRIGGER trigger_delete_table_film
+		AFTER INSERT ON film
+		FOR EACH ROW
+		EXECUTE FUNCTION delete_table_film();
+	\end{verbatim}
+
+	Comprobación del funcionamiento del disparador \ref{fig:Exercice-6}:
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.5]{img/Exercice-6-Comprobation.png}
+		\caption{Comprobación del funcionamiento del disparador, tabla updated-table-film.}
+		\label{fig:Exercice-6}
+	\end{figure}
+
+	\section{Ejercicio 7}
+	Para este ejercicio se solicita la contrucción de un disparador que guarde en una nueva tabla creada la fecha de cuando se eliminó un registro en la tabla \emph{film}.\\
+
+	Para la implementación de dicho disparador se ha creado de manera previa una nueva tabla denominada como \emph{deleting-film-rows}, la cual tiene la siguiente estructura:
+
+	\begin{verbatim}
+		CREATE TABLE deleting_film_rows (
+				delete_id SERIAL PRIMARY KEY,
+				film_id INT NOT NULL,
+				last_update TIMESTAMP NOT NULL
+		);
+	\end{verbatim}
+
+	Una vez creada la tabla, se procede a la implementación del disparador, para ello se emplea la siguiente consulta:
+
+	\begin{verbatim}
+		-- First we create the function
+		CREATE FUNCTION delete_table_film() RETURNS TRIGGER AS $$
+				BEGIN
+						INSERT INTO deleting_film_rows (film_id, last_update)
+						VALUES (OLD.film_id, NOW());
+						RETURN OLD;
+				END;
+		$$ LANGUAGE plpgsql;
+
+		-- Then we create the trigger
+		CREATE TRIGGER delete_film_trigger
+			AFTER DELETE ON film
+			FOR EACH ROW
+			EXECUTE PROCEDURE delete_table_film();
+	\end{verbatim}
+
+	Comprobación del funcionamiento del disparador \ref{fig:Exercice-7}:
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.5]{img/Exercice-7-Comprobation.png}
+		\caption{Comprobación del funcionamiento del disparador, tabla deleting-film-rows.}
+		\label{fig:Exercice-7}
+	\end{figure}
+
+	\section{Ejercicio 8}
+	Para el octavo y último ejercicio de la práctica se solicita la explicación del término \emph{sequence} y su uso en \emph{PostgreSQL}.\\
+
+	Es por ello que, las \emph{sequence} en postgresql son objetos que se utilizan para generar valores numéricos de manera secuencial. Estos valores pueden ser utilizados para generar valores de clave primaria o valores de cualquier otra columna.\\
+
+	Es bastante útil e importante debido a que garantiza la unicidad y la no repetición de valores en una columna, sobre todo importante para el caso de las columnas de clave primaria o identificadores únicos.\\
+
+	Un ejemplo de creación de una \emph{sequence} en \emph{PostgreSQL} sería el siguiente:
+
+	\begin{verbatim}
+		CREATE SEQUENCE nombre_de_la_secuencia START 1 INCREMENT 2;
+	\end{verbatim}
 
 	\chapter{Conclusiones}
   Example....	
 
 	\chapter{Bibliografía}
-	Example....
-	
+	Autor(es). (Año). Título de la página o artículo. Nombre del Sitio web. URL\\
+	\begin{enumerate}
+		\item OpenAI. (2023). ChatGPT. OpenAI. \url{https://chat.openai.com/}
+		\item PostgreSQL. (2023). PostgreSQL: Documentation: 13: CREATE SEQUENCE. PostgreSQL. \url{https://www.postgresql.org/docs/13/sql-createsequence.html}
+		\item PostgreSQL. (2023). PostgreSQL: Documentation: 13: CREATE TRIGGER. PostgreSQL. \url{https://www.postgresql.org/docs/13/sql-createtrigger.html}
+		\item PostgreSQL. (2023). PostgreSQL: Documentation: 13: CREATE VIEW. PostgreSQL. \url{https://www.postgresql.org/docs/13/sql-createview.html}
+		\item PostgreSQL. (2023). PostgreSQL: Documentation: 13: CREATE FUNCTION. PostgreSQL. \url{https://www.postgresql.org/docs/13/sql-createfunction.html}
+		\item Samuel Martín Morales. (2023). PostgreSQL-Rent. GitHub. \url{https://github.com/Samuelmm15/PostgreSQL-Rent.git}
+	\end{enumerate}	
 \end{document}
