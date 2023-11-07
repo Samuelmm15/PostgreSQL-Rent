@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.2)  7 NOV 2023 09:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.2)  7 NOV 2023 13:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -398,33 +398,83 @@ Underfull \hbox (badness 10000) in paragraph at lines 69--70
 
  []
 
+
+Overfull \hbox (586.25653pt too wide) in paragraph at lines 99--99
+[]\OT1/cmtt/m/n/10 SELECT COUNT(*) AS total_rent , store.store_id AS store_id, city.city || ', ' || country.country AS cityu_and_country, staff.first_name AS manager_staff_first_name, staff.last_name AS manager_staff_last_name[] 
+ []
+
 [3
 
 ]
+Overfull \hbox (21.79999pt too wide) in paragraph at lines 103--105
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--105
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--105
+
+ []
+
+
+Overfull \hbox (329.00877pt too wide) in paragraph at lines 117--117
+[]\OT1/cmtt/m/n/10 SELECT film.film_id, title, description, category.name AS category_name,rental_rate, length, rating ,actor.first_name || '  ' || actor.last_name AS actor_name[] 
+ []
+
+
+Overfull \hbox (213.50978pt too wide) in paragraph at lines 131--131
+[]\OT1/cmtt/m/n/10 SELECT actor.actor_id, actor.first_name, actor.last_name,film.title || ' : ' || film.description || ' : ' || category.name AS films_made[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 134--135
+
+ []
+
+[4]
+Overfull \hbox (586.25653pt too wide) in paragraph at lines 166--166
+[]\OT1/cmtt/m/n/10 SELECT COUNT(*) AS total_rent , store.store_id AS store_id, city.city || ', ' || country.country AS cityu_and_country, staff.first_name AS manager_staff_first_name, staff.last_name AS manager_staff_last_name[] 
+ []
+
+
+Overfull \hbox (329.00877pt too wide) in paragraph at lines 180--180
+[]\OT1/cmtt/m/n/10 SELECT film.film_id, title, description, category.name AS category_name,rental_rate, length, rating ,actor.first_name || '  ' || actor.last_name AS actor_name[] 
+ []
+
+
+Overfull \hbox (213.50978pt too wide) in paragraph at lines 195--195
+[]\OT1/cmtt/m/n/10 SELECT actor.actor_id, actor.first_name, actor.last_name,film.title || ' : ' || film.description || ' : ' || category.name AS films_made[] 
+ []
+
+[5]
 Chapter 3.
-[4
+[6
 
 ]
 Chapter 4.
-[5
+[7
 
 ] (./Triggers-and-views-in-SQL.aux)
 Package rerunfilecheck Info: File `Triggers-and-views-in-SQL.out' has not changed.
-(rerunfilecheck)             Checksum: 7B29AD0F36D9A05A106AD9AA175F1F6B;766.
+(rerunfilecheck)             Checksum: 2CC53310429BDED147C6FBDA404B39ED;2677.
  ) 
 Here is how much of TeX's memory you used:
- 11393 strings out of 478268
- 187375 string characters out of 5846348
- 478066 words of memory out of 5000000
- 29457 multiletter control sequences out of 15000+600000
+ 11417 strings out of 478268
+ 187721 string characters out of 5846348
+ 483066 words of memory out of 5000000
+ 29468 multiletter control sequences out of 15000+600000
  475599 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 69i,7n,117p,601b,338s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 69i,7n,117p,601b,464s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Triggers-and-views-in-SQL.pdf (6 pages, 116285 bytes).
+Output written on Triggers-and-views-in-SQL.pdf (8 pages, 124220 bytes).
 PDF statistics:
- 113 PDF objects out of 1000 (max. 8388607)
- 88 compressed objects within 1 object stream
- 14 named destinations out of 1000 (max. 500000)
- 57 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 181 PDF objects out of 1000 (max. 8388607)
+ 153 compressed objects within 2 object streams
+ 27 named destinations out of 1000 (max. 500000)
+ 145 words of extra memory for PDF output out of 10000 (max. 10000000)
 

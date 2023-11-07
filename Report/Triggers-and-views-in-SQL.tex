@@ -81,7 +81,125 @@
 		GROUP BY category_name
 		ORDER BY total_rent DESC;
 	\end{verbatim}
+
+	\subsection{Ventas totales por tienda}
+	Para obtener las ventas totales por tienda donde se refleja la ciudad, el país y el encargado,  se emplea la siguiente consulta:
+
+	\begin{verbatim}
+		SELECT COUNT(*) AS total_rent , store.store_id AS store_id, city.city || ', ' || country.country AS cityu_and_country, staff.first_name AS manager_staff_first_name, staff.last_name AS manager_staff_last_name
+	FROM rental
+	INNER JOIN inventory on rental.inventory_id = inventory.inventory_id
+	INNER JOIN store ON inventory.store_id = store.store_id
+	INNER JOIN staff ON store.manager_staff_id = staff.staff_id
+	INNER JOIN address ON store.address_id = address.address_id
+	INNER JOIN city ON address.city_id = city.city_id
+	INNER JOIN country ON city.country_id = country.country_id
+	GROUP BY store.store_id, manager_staff_first_name, manager_staff_last_name, city, country
+	ORDER BY total_rent DESC;
+	\end{verbatim}
+
+	\fbox{\parbox{\textwidth}{
+    \textbf{Nota:} para la consulta anterior se ha empleado una concatenación de cadenas de caracteres para poder obtener la ciudad y el país en una misma columna, para ello, se ha hecho uso de la doble barra vertical  que permite establecer la concatenación por pares de elementos, y para el ejemplo de consulta observado anteriormente, se hace uso del separador \emph{","} para realizar esta operación.
+}}\\
+\\
 	
+	\subsection{Lista de películas}
+	Para obtener una lista de películas junto con sus actores, se emplea la siguiente consulta:
+
+	\begin{verbatim}
+		SELECT film.film_id, title, description, category.name AS category_name,rental_rate, length, rating ,actor.first_name || '  ' || actor.last_name AS actor_name
+		FROM film
+		INNER JOIN film_actor ON film.film_id = film_actor.film_id
+		INNER JOIN actor ON film_actor.actor_id = actor.actor_id
+		INNER JOIN film_category ON film.film_id = film_category.film_id
+		INNER JOIN category ON film_category.category_id = category.category_id
+		ORDER BY film_id;
+	\end{verbatim}
+
+	\subsection{información de los actores}
+	Para obtener información de los distintos actores junto con sus películas existentes en la base de datos, se implementa la siguiente consulta:
+
+	\begin{verbatim}
+		SELECT actor.actor_id, actor.first_name, actor.last_name,film.title || ' : ' || film.description || ' : ' || category.name AS films_made
+		FROM actor
+		INNER JOIN film_actor ON actor.actor_id = film_actor.actor_id
+		INNER JOIN film ON film_actor.film_id = film.film_id
+		INNER JOIN film_category ON film.film_id = film_category.film_id
+		INNER JOIN category ON film_category.category_id = category.category_id
+		GROUP BY actor.actor_id, actor.first_name, actor.last_name, films_made
+		ORDER BY actor.actor_id;
+	\end{verbatim}
+
+	\section{Ejercicio 3}
+	Implementación de todas las vistas a partir de las consultas realizadas en el ejercicio anterior.\\
+
+	\subsection{Vista 1: Ventas totales}
+	Para la implementación de la primera vista, se emplea la siguiente consulta:
+
+	\begin{verbatim}
+		CREATE VIEW total_rent_per_category AS
+		SELECT COUNT(*) AS total_rent, category.name AS category_name
+		FROM rental
+		INNER JOIN inventory ON rental.inventory_id = inventory.inventory_id
+		INNER JOIN film ON inventory.film_id = film.film_id
+		INNER JOIN film_category ON film.film_id = film_category.film_id
+		INNER JOIN category ON film_category.category_id = category.category_id
+		GROUP BY category_name
+		ORDER BY total_rent DESC;
+	\end{verbatim}
+	
+	\subsection{Vista 2: Ventas totales por tienda}
+	Para la implementación de la segunda vista, se emplea la siguiente consulta:
+
+	\begin{verbatim}
+		CREATE VIEW total_rent_per_store AS
+		SELECT COUNT(*) AS total_rent , store.store_id AS store_id, city.city || ', ' || country.country AS cityu_and_country, staff.first_name AS manager_staff_first_name, staff.last_name AS manager_staff_last_name
+		FROM rental
+		INNER JOIN inventory on rental.inventory_id = inventory.inventory_id
+		INNER JOIN store ON inventory.store_id = store.store_id
+		INNER JOIN staff ON store.manager_staff_id = staff.staff_id
+		INNER JOIN address ON store.address_id = address.address_id
+		INNER JOIN city ON address.city_id = city.city_id
+		INNER JOIN country ON city.country_id = country.country_id
+		GROUP BY store.store_id, manager_staff_first_name, manager_staff_last_name, city, country
+		ORDER BY total_rent DESC;
+	\end{verbatim}
+
+	\subsection{Vista 3: Lista de películas}
+	Para la implementación de la tercera vista, se emplea la siguiente consulta:
+
+	\begin{verbatim}
+		CREATE VIEW films_list AS
+		SELECT film.film_id, title, description, category.name AS category_name,rental_rate, length, rating ,actor.first_name || '  ' || actor.last_name AS actor_name
+		FROM film
+		INNER JOIN film_actor ON film.film_id = film_actor.film_id
+		INNER JOIN actor ON film_actor.actor_id = actor.actor_id
+		INNER JOIN film_category ON film.film_id = film_category.film_id
+		INNER JOIN category ON film_category.category_id = category.category_id
+		ORDER BY film_id;
+	\end{verbatim}
+
+	\subsection{Vista 4: Información de los actores}
+	Para la implementación de la cuarta vista, se emplea la siguiente consulta:
+
+	\begin{verbatim}
+		CREATE VIEW actor_list AS
+		SELECT actor.actor_id, actor.first_name, actor.last_name,film.title || ' : ' || film.description || ' : ' || category.name AS films_made
+		FROM actor
+		INNER JOIN film_actor ON actor.actor_id = film_actor.actor_id
+		INNER JOIN film ON film_actor.film_id = film.film_id
+		INNER JOIN film_category ON film.film_id = film_category.film_id
+		INNER JOIN category ON film_category.category_id = category.category_id
+		GROUP BY actor.actor_id, actor.first_name, actor.last_name, films_made
+		ORDER BY actor.actor_id;
+	\end{verbatim}
+
+	\section{Ejercicio 4}
+
+	\section{Ejercicio 5}
+
+	\section{Ejercicio 6}
+
 	\chapter{Conclusiones}
   Example....	
 
