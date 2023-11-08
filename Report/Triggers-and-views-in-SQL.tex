@@ -1,4 +1,4 @@
-\documentclass{report}
+\documentclass[10pt]{report}
 
 % Paquetes y configuraciones adicionales
 \usepackage{graphicx}
@@ -8,6 +8,10 @@
 \usepackage{titlesec}
 \usepackage{geometry}
 \usepackage{hyperref}
+\usepackage{fontspec}
+
+\setmainfont{Geist}
+
 
 
 % Configura los márgenes
@@ -29,7 +33,7 @@
 	% Portada del informe
 	
 	\title{Disparadores y Vistas en SQL}
-	\author{Samuel Martín Morales}
+	\author{Samuel Martín Morales \texttt{alu0101359526@ull.edu.es}}
 	\date{\today}
 	
 	\maketitle
@@ -240,8 +244,22 @@
 	\end{verbatim}
 
 	\section{Ejercicio 4}
-
+	
 	\section{Ejercicio 5}
+	Para el quinto ejercicio de la práctica, se solicita la explicación del funcionamiento del trigger adjunto a continuación:
+
+	\begin{verbatim}
+		last_updated BEFORE UPDATE ON customer FOR EACH ROW EXECUTE
+			PROCEDURE last_updated()
+	\end{verbatim}
+
+	El trigger representado anteriormente se activa o se ejecuta antes de que se actualice un registro de la tabla \emph{customer}, dónde, de manera previa a la actualización de cualquiera de los registros de la tabla \emph{customer}, se ejecuta la función \emph{last\_updated()}.\\
+
+	Teniendo en cuenta todo lo mencionado anteriormente, se puede observar que en la tabla \emph{film} se hace uso de un trigger que se ejecuta de manera previa a la insersión o la actualización de alguno de los registros de dicha tabla, es por ello que dicho disparador puede ser tomado como ejemplo de una tabla que haga uso de una solución similar a la que se ha mencionado anteriormente. Esto comentado puede ser observado en el bloque de código ajunto a continuación:
+
+	\begin{verbatim}
+		CREATE TRIGGER film_fulltext_trigger BEFORE INSERT OR UPDATE ON public.film FOR EACH ROW EXECUTE FUNCTION tsvector_update_trigger('fulltext', 'pg_catalog.english', 'title', 'description');
+	\end{verbatim}
 
 	\section{Ejercicio 6}
 	Para el sexto ejercicio solicitado, se debe de contruir un disparador que se encargue de guardar en una nueva tabla creada la fecha de cuando se insertó un nuevo registro dentro de la tabla \emph{film}.\\
@@ -337,7 +355,11 @@
 	\end{verbatim}
 
 	\chapter{Conclusiones}
-  Example....	
+  Para concluir con esta cuarta práctica de la asignatura \emph{Administración y Diseño de Bases de Datos}, se puede observar que, a pesar de que la base de datos \emph{alquilerdvd} no es muy extensa, se ha podido realizar consultas que permiten obtener información de la misma.\\
+
+	Es por ello que, gracias a esto se puede prácticar y aprender a realizar consultas de manera correcta y eficiente, de la misma manera en la que se podría realizar en un entorno de trabajo real. Por otro lado, gracias a esto he podido comprender la importancia del empleo de triggers que nos permitan realizar aquellas funciones que nosotros queramos dentro de nuestra base de datos, operaciones o funciones como comprobaciones de insersión, eliminación, actualización de elementos dentro de las distintas tablas de nuestra base de datos y operaciones similares. \\
+
+	En resumen, esta práctica ha sido fundamental para comprender la importancia de un diseño adecuado de las bases de datos, así como la importancia de su correcta manipulación para obtener resultados precisos y relevantes. Estos conocimientos resultan esenciales para el desarrollo y la administración efectiva de sistemas de bases de datos en entornos reales. \\
 
 	\chapter{Bibliografía}
 	Autor(es). (Año). Título de la página o artículo. Nombre del Sitio web. URL\\

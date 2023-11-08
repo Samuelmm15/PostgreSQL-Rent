@@ -13,7 +13,7 @@
 \contentsline {subsection}{\numberline {2.3.4}Vista 4: Información de los actores}{9}{subsection.2.3.4}%
 \contentsline {section}{\numberline {2.4}Ejercicio 4}{9}{section.2.4}%
 \contentsline {section}{\numberline {2.5}Ejercicio 5}{9}{section.2.5}%
-\contentsline {section}{\numberline {2.6}Ejercicio 6}{9}{section.2.6}%
+\contentsline {section}{\numberline {2.6}Ejercicio 6}{10}{section.2.6}%
 \contentsline {section}{\numberline {2.7}Ejercicio 7}{11}{section.2.7}%
 \contentsline {section}{\numberline {2.8}Ejercicio 8}{12}{section.2.8}%
 \contentsline {chapter}{\numberline {3}Conclusiones}{13}{chapter.3}%
