@@ -1,6 +1,6 @@
 # Fdb version 3
-["lualatex"] 1699465379 "/Users/smartin/Desktop/P4-ADBD-Rent-Data-Base/Report/Triggers-and-views-in-SQL.tex" "Triggers-and-views-in-SQL.pdf" "Triggers-and-views-in-SQL" 1699465382
-  "/Users/smartin/Desktop/P4-ADBD-Rent-Data-Base/Report/Triggers-and-views-in-SQL.tex" 1699465379 18038 d189df8a71fed261354ef5fb1b7a00c2 ""
+["lualatex"] 1699534631 "/Users/smartin/Desktop/P4-ADBD-Rent-Data-Base/Report/Triggers-and-views-in-SQL.tex" "Triggers-and-views-in-SQL.pdf" "Triggers-and-views-in-SQL" 1699534634
+  "/Users/smartin/Desktop/P4-ADBD-Rent-Data-Base/Report/Triggers-and-views-in-SQL.tex" 1699534631 18833 4cab847dadf377125c4a767eb770ce7f ""
   "/Users/smartin/Library/Fonts/Geist-Regular.otf" 1698082286 55900 39ff0c17d6190ca5849a40e0153e54de ""
   "/Users/smartin/Library/Fonts/Geist-SemiBold.otf" 1698082286 57760 42e8b5cbe846f987eaeb77c626da6846 ""
   "/Users/smartin/Library/texlive/2022/texmf-var/luatex-cache/generic/fonts/otl/geist-regular.luc" 1699460911 100131 4b916eac521228f71b9fa441ce3aba4b ""
@@ -204,10 +204,10 @@
   "/usr/local/texlive/2022/texmf-dist/tex/luatex/luaotfload/luaotfload.lua" 1647637340 13565 30cc2d8cecf79afb1abb4d5c12eb919a ""
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/luahbtex/lualatex.fmt" 1677759653 4558587 1e543e01a18de00d8d81bfdc0ab21f5a ""
-  "Triggers-and-views-in-SQL.aux" 1699465382 5758 3619cd260cebd9e67c86aea310929f9d "lualatex"
-  "Triggers-and-views-in-SQL.out" 1699465382 2903 5d171737fdfa4b0e348755a17f85b887 "lualatex"
-  "Triggers-and-views-in-SQL.tex" 1699465379 18038 d189df8a71fed261354ef5fb1b7a00c2 ""
-  "Triggers-and-views-in-SQL.toc" 1699465382 1611 b2b742c7e0637b5c66e22ec3247fda5d "lualatex"
+  "Triggers-and-views-in-SQL.aux" 1699534634 5872 3735d78c3f582889ba9fdd4d5874f208 "lualatex"
+  "Triggers-and-views-in-SQL.out" 1699534634 3016 8a2eabb72c2e5ba52970858effa8147c "lualatex"
+  "Triggers-and-views-in-SQL.tex" 1699534631 18833 4cab847dadf377125c4a767eb770ce7f ""
+  "Triggers-and-views-in-SQL.toc" 1699534634 1684 0cb9909d2e3e7347fa7f7cbcb7c53bc6 "lualatex"
   "img/Exercice-1-Comprobation.jpeg" 1699384704 174129 6b1c046dbf8ef5d48c6ca6854d647db9 ""
   "img/Exercice-2.2.1-Comprobation.png" 1699385079 274593 3231035f67523c6040b0bdd2952d8c6d ""
   "img/Exercice-2.2.2-Comprobation.png" 1699385296 277009 240d43ef6794cd16ac5db678ef83e0af ""

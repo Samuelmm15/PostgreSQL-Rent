@@ -79,6 +79,10 @@
   \end{figure}
 
 	\section{Ejercicio 2}
+	Para el segundo ejercicio de la práctica, se solicita la identificación de las tablas más importantes de la base de datos junto con sus atributos y relaciones más relevantes entre las distintas tablas.\\
+	
+	
+	\section{Ejercicio 3}
 	Tras la identificación de las distintas tablas más importantes de la base de datos junto con sus atributos  y relaciones entre las distintas tablas, se procede a la implementación de distintas consultas que permitan obtener aquella información que es solicitada en el enunciado del ejercicio.\\
 
 	\subsection{Ventas totales}
@@ -179,7 +183,7 @@
 		\label{fig:Exercice-2-4}
 	\end{figure}
 
-	\section{Ejercicio 3}
+	\section{Ejercicio 4}
 	Implementación de todas las vistas a partir de las consultas realizadas en el ejercicio anterior.\\
 
 	\subsection{Vista 1: Ventas totales}
@@ -243,9 +247,9 @@
 		ORDER BY actor.actor_id;
 	\end{verbatim}
 
-	\section{Ejercicio 4}
-	
 	\section{Ejercicio 5}
+	Dentro del modelo de la base de datos \emph{alquilerdvd} se puede observar que existen tablas que emplean identificadores de tuplas o filas que se encuentran dentro de otras tablas, es por ello, que para dichas tablas que emplean campos o columnas que hacen uso de  números de indentificación, se podrían implementar restricciones \emph{CHECK} que se encargen de comprobar que dichos números de identificación que son introducidos para las distintas tuplas,  corresponden con los números de identificación de las tablas a las que hacen referencia.\\
+	\section{Ejercicio 6}
 	Para el quinto ejercicio de la práctica, se solicita la explicación del funcionamiento del trigger adjunto a continuación:
 
 	\begin{verbatim}
@@ -261,7 +265,7 @@
 		CREATE TRIGGER film_fulltext_trigger BEFORE INSERT OR UPDATE ON public.film FOR EACH ROW EXECUTE FUNCTION tsvector_update_trigger('fulltext', 'pg_catalog.english', 'title', 'description');
 	\end{verbatim}
 
-	\section{Ejercicio 6}
+	\section{Ejercicio 7}
 	Para el sexto ejercicio solicitado, se debe de contruir un disparador que se encargue de guardar en una nueva tabla creada la fecha de cuando se insertó un nuevo registro dentro de la tabla \emph{film}.\\
 
 	Cabe destacar que para la implementación de dicho disparador se ha creado de manera previa una nueva tabla denominada como \emph{updated-table-film}, la cual tiene la siguiente estructura:
@@ -300,7 +304,7 @@
 		\label{fig:Exercice-6}
 	\end{figure}
 
-	\section{Ejercicio 7}
+	\section{Ejercicio 8}
 	Para este ejercicio se solicita la contrucción de un disparador que guarde en una nueva tabla creada la fecha de cuando se eliminó un registro en la tabla \emph{film}.\\
 
 	Para la implementación de dicho disparador se ha creado de manera previa una nueva tabla denominada como \emph{deleting-film-rows}, la cual tiene la siguiente estructura:
@@ -341,7 +345,7 @@
 		\label{fig:Exercice-7}
 	\end{figure}
 
-	\section{Ejercicio 8}
+	\section{Ejercicio 9}
 	Para el octavo y último ejercicio de la práctica se solicita la explicación del término \emph{sequence} y su uso en \emph{PostgreSQL}.\\
 
 	Es por ello que, las \emph{sequence} en postgresql son objetos que se utilizan para generar valores numéricos de manera secuencial. Estos valores pueden ser utilizados para generar valores de clave primaria o valores de cualquier otra columna.\\
@@ -357,7 +361,7 @@
 	\chapter{Conclusiones}
   Para concluir con esta cuarta práctica de la asignatura \emph{Administración y Diseño de Bases de Datos}, se puede observar que, a pesar de que la base de datos \emph{alquilerdvd} no es muy extensa, se ha podido realizar consultas que permiten obtener información de la misma.\\
 
-	Es por ello que, gracias a esto se puede prácticar y aprender a realizar consultas de manera correcta y eficiente, de la misma manera en la que se podría realizar en un entorno de trabajo real. Por otro lado, gracias a esto he podido comprender la importancia del empleo de triggers que nos permitan realizar aquellas funciones que nosotros queramos dentro de nuestra base de datos, operaciones o funciones como comprobaciones de insersión, eliminación, actualización de elementos dentro de las distintas tablas de nuestra base de datos y operaciones similares. \\
+	Es por ello que, gracias a esto se puede prácticar y aprender a realizar consultas de manera correcta y eficiente, de la misma manera en la que se podría realizar en un entorno de trabajo real. Por otro lado, gracias a esto se ha podido comprender la importancia del empleo de triggers que nos permitan realizar aquellas funciones que nosotros queramos dentro de nuestra base de datos, operaciones o funciones como comprobaciones de insersión, eliminación, actualización de elementos dentro de las distintas tablas de nuestra base de datos y operaciones similares. \\
 
 	En resumen, esta práctica ha sido fundamental para comprender la importancia de un diseño adecuado de las bases de datos, así como la importancia de su correcta manipulación para obtener resultados precisos y relevantes. Estos conocimientos resultan esenciales para el desarrollo y la administración efectiva de sistemas de bases de datos en entornos reales. \\
 
