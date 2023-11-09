@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2023.3.2)  9 NOV 2023 12:57
+This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2023.3.2)  9 NOV 2023 13:20
  restricted system commands enabled.
  file:line:error style messages enabled.
 **/Users/smartin/Desktop/P4-ADBD-Rent-Data-Base/Report/Triggers-and-views-in-SQL.tex
@@ -668,26 +668,11 @@ LaTeX Font Warning: Font shape `TU/Geist(0)/m/it' undefined
 (Font)              using `TU/Geist(0)/m/n' instead on input line 46.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--47
-
- []
-
-
 LaTeX Font Warning: Font shape `TU/Geist(0)/b/it' undefined
 (Font)              using `TU/Geist(0)/b/n' instead on input line 48.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--49
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--57
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 58--59
+Underfull \hbox (badness 10000) in paragraph at lines 56--60
 
  []
 
@@ -695,11 +680,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 58--59
 
 ]
 Chapter 2.
-
-Underfull \hbox (badness 10000) in paragraph at lines 62--63
-
- []
-
 <img/Exercice-1-Comprobation.jpeg, id=133, 1056.94875pt x 980.66376pt>
 File: img/Exercice-1-Comprobation.jpeg Graphic file (type jpg)
 <use img/Exercice-1-Comprobation.jpeg>
@@ -708,207 +688,150 @@ Package luatex.def Info: img/Exercice-1-Comprobation.jpeg  used on input line 76
 [3
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 82--83
+Underfull \hbox (badness 10000) in paragraph at lines 82--84
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 86--87
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 84.
+[4<./img/Exercice-1-Comprobation.jpeg>] [5]
+Underfull \hbox (badness 10000) in paragraph at lines 171--173
 
  []
 
-[4<./img/Exercice-1-Comprobation.jpeg>]
-<img/Exercice-2.2.1-Comprobation.png, id=145, 1225.57875pt x 797.98125pt>
+<img/Exercice-2.2.1-Comprobation.png, id=156, 1225.57875pt x 797.98125pt>
 File: img/Exercice-2.2.1-Comprobation.png Graphic file (type png)
 <use img/Exercice-2.2.1-Comprobation.png>
-Package luatex.def Info: img/Exercice-2.2.1-Comprobation.png  used on input line 106.
+Package luatex.def Info: img/Exercice-2.2.1-Comprobation.png  used on input line 191.
 (luatex.def)             Requested size: 612.78789pt x 398.98964pt.
 
-Overfull \hbox (112.3039pt too wide) in paragraph at lines 106--107
+Overfull \hbox (112.3039pt too wide) in paragraph at lines 191--192
  [][] 
  []
 
-
-Overfull \hbox (586.266pt too wide) in paragraph at lines 125--125
+[6]
+Overfull \hbox (586.266pt too wide) in paragraph at lines 210--210
 []\TU/lmtt/m/n/10 SELECT COUNT(*) AS total_rent , store.store_id AS store_id, city.city || ', ' || country.country AS cityu_and_country, staff.first_name AS manager_staff_first_name, staff.last_name AS manager_staff_last_name[] 
  []
 
-[5<./img/Exercice-2.2.1-Comprobation.png>]
-<img/Exercice-2.2.2-Comprobation.png, id=154, 1224.575pt x 839.135pt>
+<img/Exercice-2.2.2-Comprobation.png, id=166, 1224.575pt x 839.135pt>
 File: img/Exercice-2.2.2-Comprobation.png Graphic file (type png)
 <use img/Exercice-2.2.2-Comprobation.png>
-Package luatex.def Info: img/Exercice-2.2.2-Comprobation.png  used on input line 131.
+Package luatex.def Info: img/Exercice-2.2.2-Comprobation.png  used on input line 216.
 (luatex.def)             Requested size: 612.28601pt x 419.56647pt.
 
-Overfull \hbox (111.80202pt too wide) in paragraph at lines 131--132
+Overfull \hbox (111.80202pt too wide) in paragraph at lines 216--217
  [][] 
  []
 
-
-Overfull \hbox (21.79999pt too wide) in paragraph at lines 138--140
+[7<./img/Exercice-2.2.1-Comprobation.png>]
+Overfull \hbox (21.79999pt too wide) in paragraph at lines 223--225
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 138--140
+Underfull \hbox (badness 10000) in paragraph at lines 223--225
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 138--140
-
- []
-
-[6<./img/Exercice-2.2.2-Comprobation.png>]
-Overfull \hbox (329.016pt too wide) in paragraph at lines 152--152
+Overfull \hbox (329.016pt too wide) in paragraph at lines 237--237
 []\TU/lmtt/m/n/10 SELECT film.film_id, title, description, category.name AS category_name,rental_rate, length, rating ,actor.first_name || '  ' || actor.last_name AS actor_name[] 
  []
 
-<img/Exercice-2.2.3-Comprobation.png, id=164, 1223.57124pt x 796.9775pt>
+<img/Exercice-2.2.3-Comprobation.png, id=175, 1223.57124pt x 796.9775pt>
 File: img/Exercice-2.2.3-Comprobation.png Graphic file (type png)
 <use img/Exercice-2.2.3-Comprobation.png>
-Package luatex.def Info: img/Exercice-2.2.3-Comprobation.png  used on input line 158.
+Package luatex.def Info: img/Exercice-2.2.3-Comprobation.png  used on input line 243.
 (luatex.def)             Requested size: 611.78413pt x 398.48776pt.
 
-Overfull \hbox (111.30014pt too wide) in paragraph at lines 158--159
+Overfull \hbox (111.30014pt too wide) in paragraph at lines 243--244
  [][] 
  []
 
-
-Overfull \hbox (213.516pt too wide) in paragraph at lines 175--175
+[8<./img/Exercice-2.2.2-Comprobation.png>]
+Overfull \hbox (213.516pt too wide) in paragraph at lines 260--260
 []\TU/lmtt/m/n/10 SELECT actor.actor_id, actor.first_name, actor.last_name,film.title || ' : ' || film.description || ' : ' || category.name AS films_made[] 
  []
 
-[7<./img/Exercice-2.2.3-Comprobation.png>]
-<img/Exercice-2.2.4-Comprobation.png, id=173, 1223.57124pt x 796.9775pt>
+<img/Exercice-2.2.4-Comprobation.png, id=182, 1223.57124pt x 796.9775pt>
 File: img/Exercice-2.2.4-Comprobation.png Graphic file (type png)
 <use img/Exercice-2.2.4-Comprobation.png>
-Package luatex.def Info: img/Exercice-2.2.4-Comprobation.png  used on input line 181.
+Package luatex.def Info: img/Exercice-2.2.4-Comprobation.png  used on input line 266.
 (luatex.def)             Requested size: 611.78413pt x 398.48776pt.
 
-Overfull \hbox (111.30014pt too wide) in paragraph at lines 181--182
+Overfull \hbox (111.30014pt too wide) in paragraph at lines 266--267
  [][] 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 187--188
+[9<./img/Exercice-2.2.3-Comprobation.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 272--274
 
  []
 
-[8<./img/Exercice-2.2.4-Comprobation.png>]
-Overfull \hbox (586.266pt too wide) in paragraph at lines 219--219
+[10<./img/Exercice-2.2.4-Comprobation.png>]
+Overfull \hbox (586.266pt too wide) in paragraph at lines 304--304
 []\TU/lmtt/m/n/10 SELECT COUNT(*) AS total_rent , store.store_id AS store_id, city.city || ', ' || country.country AS cityu_and_country, staff.first_name AS manager_staff_first_name, staff.last_name AS manager_staff_last_name[] 
  []
 
 
-Overfull \hbox (329.016pt too wide) in paragraph at lines 233--233
+Overfull \hbox (329.016pt too wide) in paragraph at lines 318--318
 []\TU/lmtt/m/n/10 SELECT film.film_id, title, description, category.name AS category_name,rental_rate, length, rating ,actor.first_name || '  ' || actor.last_name AS actor_name[] 
  []
 
 
-Overfull \hbox (213.516pt too wide) in paragraph at lines 248--248
+Overfull \hbox (213.516pt too wide) in paragraph at lines 333--333
 []\TU/lmtt/m/n/10 SELECT actor.actor_id, actor.first_name, actor.last_name,film.title || ' : ' || film.description || ' : ' || category.name AS films_made[] 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 251--252
-
- []
-
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 260--261
-
- []
-
-
-Overfull \hbox (486.516pt too wide) in paragraph at lines 266--266
+[11]
+Overfull \hbox (486.516pt too wide) in paragraph at lines 359--359
 []\TU/lmtt/m/n/10 CREATE TRIGGER film_fulltext_trigger BEFORE INSERT OR UPDATE ON public.film FOR EACH ROW EXECUTE FUNCTION tsvector_update_trigger('fulltext', 'pg_catalog.english', 'title', 'description');[] 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 269--270
-
- []
-
-[10]
-<img/Exercice-6-Comprobation.png, id=191, 1224.575pt x 588.1975pt>
+<img/Exercice-6-Comprobation.png, id=202, 1224.575pt x 588.1975pt>
 File: img/Exercice-6-Comprobation.png Graphic file (type png)
 <use img/Exercice-6-Comprobation.png>
-Package luatex.def Info: img/Exercice-6-Comprobation.png  used on input line 302.
+Package luatex.def Info: img/Exercice-6-Comprobation.png  used on input line 395.
 (luatex.def)             Requested size: 612.28601pt x 294.09802pt.
 
-Overfull \hbox (111.80202pt too wide) in paragraph at lines 302--303
+Overfull \hbox (111.80202pt too wide) in paragraph at lines 395--396
  [][] 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 308--309
-
- []
-
-[11<./img/Exercice-6-Comprobation.png>]
-<img/Exercice-7-Comprobation.png, id=200, 1225.57875pt x 466.74374pt>
+[12] [13<./img/Exercice-6-Comprobation.png>]
+<img/Exercice-7-Comprobation.png, id=215, 1225.57875pt x 466.74374pt>
 File: img/Exercice-7-Comprobation.png Graphic file (type png)
 <use img/Exercice-7-Comprobation.png>
-Package luatex.def Info: img/Exercice-7-Comprobation.png  used on input line 343.
+Package luatex.def Info: img/Exercice-7-Comprobation.png  used on input line 436.
 (luatex.def)             Requested size: 612.78789pt x 233.37129pt.
 
-Overfull \hbox (112.3039pt too wide) in paragraph at lines 343--344
+Overfull \hbox (112.3039pt too wide) in paragraph at lines 436--437
  [][] 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 349--350
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 351--352
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 353--354
-
- []
-
-[12<./img/Exercice-7-Comprobation.png>]
+[14<./img/Exercice-7-Comprobation.png>]
 Chapter 3.
 
-Underfull \hbox (badness 10000) in paragraph at lines 362--363
+Underfull \hbox (badness 10000) in paragraph at lines 455--461
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 364--365
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 366--367
-
- []
-
-[13
+[15
 
 ]
 Chapter 4.
 
-Underfull \hbox (badness 10000) in paragraph at lines 369--370
-
- []
-
-
-Overfull \hbox (19.1874pt too wide) in paragraph at lines 374--375
+Overfull \hbox (19.1874pt too wide) in paragraph at lines 466--467
 []\TU/Geist(0)/m/it/10 Post-greSQL. (2023). Post-greSQL: Doc-u-men-ta-tion: 13: CRE-ATE VIEW. Post-greSQL. []$\TU/lmtt/m/n/10 https://www.postgresql.
  []
 
 
-Overfull \hbox (37.56165pt too wide) in paragraph at lines 376--377
+Overfull \hbox (37.56165pt too wide) in paragraph at lines 468--469
 []\TU/Geist(0)/m/it/10 Samuel Martín Morales. (2023). PostgreSQL-Rent. GitHub. []$\TU/lmtt/m/n/10 https://github.com/Samuelmm15/PostgreSQL-[]Rent.
  []
 
-[14
+[16
 
 ] (./Triggers-and-views-in-SQL.aux)
 
@@ -919,19 +842,19 @@ Package rerunfilecheck Info: File `Triggers-and-views-in-SQL.out' has not change
 )
 
 Here is how much of LuaTeX's memory you used:
- 22587 strings out of 477785
+ 22600 strings out of 477785
  100000,953878 words of node,token memory allocated
  483 words of node memory still in use:
    3 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 10 attribute, 52 glue_spec, 10 attribute_list, 2 write, 5 pdf_action nodes
-   avail lists: 2:469,3:646,4:78,5:1362,6:83,7:6115,8:69,9:313,10:11,11:330
- 42394 multiletter control sequences out of 65536+600000
- 58 fonts using 4515967 bytes
- 105i,7n,115p,678b,437s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></Users/smartin/Library/Fonts/Geist-SemiBold.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmmono12-regular.otf></Users/smartin/Library/Fonts/Geist-Regular.otf>
-Output written on Triggers-and-views-in-SQL.pdf (15 pages, 1098176 bytes).
+   avail lists: 2:792,3:585,4:134,5:1045,6:75,7:6774,8:69,9:319,10:11,11:236
+ 42398 multiletter control sequences out of 65536+600000
+ 60 fonts using 4768143 bytes
+ 105i,7n,115p,679b,472s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></Users/smartin/Library/Fonts/Geist-SemiBold.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmmono12-regular.otf></Users/smartin/Library/Fonts/Geist-Regular.otf>
+Output written on Triggers-and-views-in-SQL.pdf (17 pages, 1104699 bytes).
 
-PDF statistics: 267 PDF objects out of 1000 (max. 8388607)
- 222 compressed objects within 3 object streams
- 50 named destinations out of 1000 (max. 131072)
+PDF statistics: 288 PDF objects out of 1000 (max. 8388607)
+ 238 compressed objects within 3 object streams
+ 59 named destinations out of 1000 (max. 131072)
  184 words of extra memory for PDF output out of 10000 (max. 100000000)
 
