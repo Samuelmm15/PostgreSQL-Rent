@@ -59,8 +59,8 @@ INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/l3kernel/expl3.lua
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/base/report.cls
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/base/report.cls
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/base/report.cls
-INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/base/size10.clo
-INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/base/size10.clo
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/base/size11.clo
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/base/size11.clo
 INPUT /Users/smartin/Library/texlive/2022/texmf-var/luatex-cache/generic/names/luaotfload-names.luc.gz
 INPUT /Users/smartin/Library/texlive/2022/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-regular.luc
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/graphics/graphicx.sty
@@ -346,14 +346,8 @@ INPUT /usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT ./Triggers-and-views-in-SQL.toc
 INPUT ./Triggers-and-views-in-SQL.toc
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmmi7.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmmi5.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmsy7.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmsy5.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmr7.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmr5.tfm
 OUTPUT Triggers-and-views-in-SQL.toc
 INPUT /Users/smartin/Library/texlive/2022/texmf-var/luatex-cache/generic/fonts/otl/lmmono10-regular.luc
 INPUT ./img/Exercice-1-Comprobation.jpeg

@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2023.3.2)  9 NOV 2023 13:20
+This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2023.3.2)  9 NOV 2023 13:37
  restricted system commands enabled.
  file:line:error style messages enabled.
 **/Users/smartin/Desktop/P4-ADBD-Rent-Data-Base/Report/Triggers-and-views-in-SQL.tex
@@ -36,8 +36,8 @@ Inserting `luaotfload.aux.set_xheight' at position 5 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 6 in `luaotfload.patch_font'. L3 programming layer <2022-02-24>
 Inserting `tracingstacklevels' at position 1 in `input_level_string'. (/usr/local/texlive/2022/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2021/10/04 v1.4n Standard LaTeX document class
-(/usr/local/texlive/2022/texmf-dist/tex/latex/base/size10.clo
-File: size10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 luaotfload | db : Font names database loaded from /Users/smartin/Library/texlive/2022/texmf-var/luatex-cache/generic/names/luaotfload-names.luc.gz)
 \c@part=\count183
 \c@chapter=\count184
@@ -478,30 +478,30 @@ Package fontspec Info: Font family 'Geist(0)' created for font 'Geist' with
  (./Triggers-and-views-in-SQL.aux)
 \openout1 = Triggers-and-views-in-SQL.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 31.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 31.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 30.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 30.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
  (/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count301
@@ -551,12 +551,12 @@ Package caption Info: End \AtBeginDocument code.
 * \topmargin=-23.91173pt
 * \headheight=12.0pt
 * \headsep=25.0pt
-* \topskip=10.0pt
+* \topskip=11.0pt
 * \footskip=30.0pt
-* \marginparwidth=65.0pt
-* \marginparsep=11.0pt
+* \marginparwidth=59.0pt
+* \marginparsep=10.0pt
 * \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -566,7 +566,7 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 31.
+Package hyperref Info: Link coloring OFF on input line 30.
 (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/local/texlive/2022/texmf-dist/tex/latex/refcount/refcount.sty
@@ -576,9 +576,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count307
 )
-LaTeX Info: Redefining \ref on input line 31.
-LaTeX Info: Redefining \pageref on input line 31.
-LaTeX Info: Redefining \nameref on input line 31.
+LaTeX Info: Redefining \ref on input line 30.
+LaTeX Info: Redefining \pageref on input line 30.
+LaTeX Info: Redefining \nameref on input line 30.
  (./Triggers-and-views-in-SQL.out) (./Triggers-and-views-in-SQL.out)
 \@outlinefile=\write4
 
@@ -589,70 +589,68 @@ Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 
 \symlegacymaths=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 31.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 31.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 31.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 31.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 31.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 31.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 31.
-LaTeX Font Info:    Redeclaring math accent \check on input line 31.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 31.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 31.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 31.
-LaTeX Font Info:    Redeclaring math symbol \colon on input line 31.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 31.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 31.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 31.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 31.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 31.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 31.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 31.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 31.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 31.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 31.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 31.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 31.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 31.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 30.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 30.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 30.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 30.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 30.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 30.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 30.
+LaTeX Font Info:    Redeclaring math accent \check on input line 30.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 30.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 30.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 30.
+LaTeX Font Info:    Redeclaring math symbol \colon on input line 30.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 30.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 30.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 30.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 30.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 30.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 30.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 30.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 30.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 30.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 30.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 30.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 30.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 30.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 31.
+(Font)              `operators' in the math version `normal' on input line 30.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/Geist(0)/m/n on input line 31.
+(Font)                  OT1/cmr/m/n --> TU/Geist(0)/m/n on input line 30.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 31.
+(Font)              `operators' in the math version `bold' on input line 30.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/Geist(0)/m/n on input line 31.
+(Font)                  OT1/cmr/bx/n --> TU/Geist(0)/m/n on input line 30.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/Geist(0)/m/n --> TU/Geist(0)/m/n on input line 31.
+(Font)                  TU/Geist(0)/m/n --> TU/Geist(0)/m/n on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/Geist(0)/m/it on input line 31.
+(Font)                  OT1/cmr/m/it --> TU/Geist(0)/m/it on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/Geist(0)/b/n on input line 31.
+(Font)                  OT1/cmr/bx/n --> TU/Geist(0)/b/n on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 31.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 31.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 30.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/Geist(0)/m/n --> TU/Geist(0)/b/n on input line 31.
+(Font)                  TU/Geist(0)/m/n --> TU/Geist(0)/b/n on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/Geist(0)/b/it on input line 31.
+(Font)                  OT1/cmr/bx/it --> TU/Geist(0)/b/it on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 31.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 31.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 30.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 40.
+(Font)              <12> on input line 39.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 40.
+(Font)              <8> on input line 39.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 40.
+(Font)              <6> on input line 39.
  [1
 
 {/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./Triggers-and-views-in-SQL.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 3.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 3.
+(Font)              <10.95> on input line 3.
 )
 \tf@toc=\write5
 
@@ -665,14 +663,19 @@ warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
 Chapter 1.
 
 LaTeX Font Warning: Font shape `TU/Geist(0)/m/it' undefined
-(Font)              using `TU/Geist(0)/m/n' instead on input line 46.
+(Font)              using `TU/Geist(0)/m/n' instead on input line 45.
 
 
 LaTeX Font Warning: Font shape `TU/Geist(0)/b/it' undefined
-(Font)              using `TU/Geist(0)/b/n' instead on input line 48.
+(Font)              using `TU/Geist(0)/b/n' instead on input line 47.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--60
+Overfull \hbox (4.21591pt too wide) in paragraph at lines 45--50
+\TU/Geist(0)/m/it/10.95 En este caso, la base de datos a em-plear se de-nom-ina como \TU/Geist(0)/b/n/10.95 alquil-erdvd.tar \TU/Geist(0)/m/it/10.95 y se en-cuen-tra disponible
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--59
 
  []
 
@@ -683,155 +686,163 @@ Chapter 2.
 <img/Exercice-1-Comprobation.jpeg, id=133, 1056.94875pt x 980.66376pt>
 File: img/Exercice-1-Comprobation.jpeg Graphic file (type jpg)
 <use img/Exercice-1-Comprobation.jpeg>
-Package luatex.def Info: img/Exercice-1-Comprobation.jpeg  used on input line 76.
+Package luatex.def Info: img/Exercice-1-Comprobation.jpeg  used on input line 75.
 (luatex.def)             Requested size: 422.772pt x 392.25854pt.
 [3
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 82--84
+Underfull \hbox (badness 10000) in paragraph at lines 81--83
 
  []
 
-LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 84.
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10.95> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 83.
 [4<./img/Exercice-1-Comprobation.jpeg>] [5]
-Underfull \hbox (badness 10000) in paragraph at lines 171--173
+Underfull \hbox (badness 10000) in paragraph at lines 170--172
 
  []
 
-<img/Exercice-2.2.1-Comprobation.png, id=156, 1225.57875pt x 797.98125pt>
+<img/Exercice-2.2.1-Comprobation.png, id=155, 1225.57875pt x 797.98125pt>
 File: img/Exercice-2.2.1-Comprobation.png Graphic file (type png)
 <use img/Exercice-2.2.1-Comprobation.png>
-Package luatex.def Info: img/Exercice-2.2.1-Comprobation.png  used on input line 191.
+Package luatex.def Info: img/Exercice-2.2.1-Comprobation.png  used on input line 190.
 (luatex.def)             Requested size: 612.78789pt x 398.98964pt.
 
-Overfull \hbox (112.3039pt too wide) in paragraph at lines 191--192
+Overfull \hbox (112.3039pt too wide) in paragraph at lines 190--191
  [][] 
  []
 
 [6]
-Overfull \hbox (586.266pt too wide) in paragraph at lines 210--210
-[]\TU/lmtt/m/n/10 SELECT COUNT(*) AS total_rent , store.store_id AS store_id, city.city || ', ' || country.country AS cityu_and_country, staff.first_name AS manager_staff_first_name, staff.last_name AS manager_staff_last_name[] 
+Overfull \hbox (689.507pt too wide) in paragraph at lines 209--209
+[]\TU/lmtt/m/n/10.95 SELECT COUNT(*) AS total_rent , store.store_id AS store_id, city.city || ', ' || country.country AS cityu_and_country, staff.first_name AS manager_staff_first_name, staff.last_name AS manager_staff_last_name[] 
+ []
+
+
+Overfull \hbox (11.15465pt too wide) in paragraph at lines 209--209
+[]\TU/lmtt/m/n/10.95 GROUP BY store.store_id, manager_staff_first_name, manager_staff_last_name, city, country[] 
  []
 
 <img/Exercice-2.2.2-Comprobation.png, id=166, 1224.575pt x 839.135pt>
 File: img/Exercice-2.2.2-Comprobation.png Graphic file (type png)
 <use img/Exercice-2.2.2-Comprobation.png>
-Package luatex.def Info: img/Exercice-2.2.2-Comprobation.png  used on input line 216.
+Package luatex.def Info: img/Exercice-2.2.2-Comprobation.png  used on input line 215.
 (luatex.def)             Requested size: 612.28601pt x 419.56647pt.
 
-Overfull \hbox (111.80202pt too wide) in paragraph at lines 216--217
+Overfull \hbox (111.80202pt too wide) in paragraph at lines 215--216
  [][] 
  []
 
 [7<./img/Exercice-2.2.1-Comprobation.png>]
-Overfull \hbox (21.79999pt too wide) in paragraph at lines 223--225
+Overfull \hbox (23.79999pt too wide) in paragraph at lines 222--224
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 223--225
+Underfull \hbox (badness 10000) in paragraph at lines 222--224
 
  []
 
 
-Overfull \hbox (329.016pt too wide) in paragraph at lines 237--237
-[]\TU/lmtt/m/n/10 SELECT film.film_id, title, description, category.name AS category_name,rental_rate, length, rating ,actor.first_name || '  ' || actor.last_name AS actor_name[] 
- []
-
-<img/Exercice-2.2.3-Comprobation.png, id=175, 1223.57124pt x 796.9775pt>
-File: img/Exercice-2.2.3-Comprobation.png Graphic file (type png)
-<use img/Exercice-2.2.3-Comprobation.png>
-Package luatex.def Info: img/Exercice-2.2.3-Comprobation.png  used on input line 243.
-(luatex.def)             Requested size: 611.78413pt x 398.48776pt.
-
-Overfull \hbox (111.30014pt too wide) in paragraph at lines 243--244
- [][] 
+Overfull \hbox (407.81831pt too wide) in paragraph at lines 236--236
+[]\TU/lmtt/m/n/10.95 SELECT film.film_id, title, description, category.name AS category_name,rental_rate, length, rating ,actor.first_name || '  ' || actor.last_name AS actor_name[] 
  []
 
 [8<./img/Exercice-2.2.2-Comprobation.png>]
-Overfull \hbox (213.516pt too wide) in paragraph at lines 260--260
-[]\TU/lmtt/m/n/10 SELECT actor.actor_id, actor.first_name, actor.last_name,film.title || ' : ' || film.description || ' : ' || category.name AS films_made[] 
- []
-
-<img/Exercice-2.2.4-Comprobation.png, id=182, 1223.57124pt x 796.9775pt>
-File: img/Exercice-2.2.4-Comprobation.png Graphic file (type png)
-<use img/Exercice-2.2.4-Comprobation.png>
-Package luatex.def Info: img/Exercice-2.2.4-Comprobation.png  used on input line 266.
+<img/Exercice-2.2.3-Comprobation.png, id=180, 1223.57124pt x 796.9775pt>
+File: img/Exercice-2.2.3-Comprobation.png Graphic file (type png)
+<use img/Exercice-2.2.3-Comprobation.png>
+Package luatex.def Info: img/Exercice-2.2.3-Comprobation.png  used on input line 242.
 (luatex.def)             Requested size: 611.78413pt x 398.48776pt.
 
-Overfull \hbox (111.30014pt too wide) in paragraph at lines 266--267
+Overfull \hbox (111.30014pt too wide) in paragraph at lines 242--243
  [][] 
  []
 
+
+Overfull \hbox (281.34584pt too wide) in paragraph at lines 259--259
+[]\TU/lmtt/m/n/10.95 SELECT actor.actor_id, actor.first_name, actor.last_name,film.title || ' : ' || film.description || ' : ' || category.name AS films_made[] 
+ []
+
 [9<./img/Exercice-2.2.3-Comprobation.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 272--274
+<img/Exercice-2.2.4-Comprobation.png, id=189, 1223.57124pt x 796.9775pt>
+File: img/Exercice-2.2.4-Comprobation.png Graphic file (type png)
+<use img/Exercice-2.2.4-Comprobation.png>
+Package luatex.def Info: img/Exercice-2.2.4-Comprobation.png  used on input line 265.
+(luatex.def)             Requested size: 611.78413pt x 398.48776pt.
+
+Overfull \hbox (111.30014pt too wide) in paragraph at lines 265--266
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 271--273
 
  []
 
 [10<./img/Exercice-2.2.4-Comprobation.png>]
-Overfull \hbox (586.266pt too wide) in paragraph at lines 304--304
-[]\TU/lmtt/m/n/10 SELECT COUNT(*) AS total_rent , store.store_id AS store_id, city.city || ', ' || country.country AS cityu_and_country, staff.first_name AS manager_staff_first_name, staff.last_name AS manager_staff_last_name[] 
+Overfull \hbox (689.507pt too wide) in paragraph at lines 303--303
+[]\TU/lmtt/m/n/10.95 SELECT COUNT(*) AS total_rent , store.store_id AS store_id, city.city || ', ' || country.country AS cityu_and_country, staff.first_name AS manager_staff_first_name, staff.last_name AS manager_staff_last_name[] 
  []
 
 
-Overfull \hbox (329.016pt too wide) in paragraph at lines 318--318
-[]\TU/lmtt/m/n/10 SELECT film.film_id, title, description, category.name AS category_name,rental_rate, length, rating ,actor.first_name || '  ' || actor.last_name AS actor_name[] 
+Overfull \hbox (11.15465pt too wide) in paragraph at lines 303--303
+[]\TU/lmtt/m/n/10.95 GROUP BY store.store_id, manager_staff_first_name, manager_staff_last_name, city, country[] 
  []
 
 
-Overfull \hbox (213.516pt too wide) in paragraph at lines 333--333
-[]\TU/lmtt/m/n/10 SELECT actor.actor_id, actor.first_name, actor.last_name,film.title || ' : ' || film.description || ' : ' || category.name AS films_made[] 
+Overfull \hbox (407.81831pt too wide) in paragraph at lines 317--317
+[]\TU/lmtt/m/n/10.95 SELECT film.film_id, title, description, category.name AS category_name,rental_rate, length, rating ,actor.first_name || '  ' || actor.last_name AS actor_name[] 
+ []
+
+
+Overfull \hbox (281.34584pt too wide) in paragraph at lines 332--332
+[]\TU/lmtt/m/n/10.95 SELECT actor.actor_id, actor.first_name, actor.last_name,film.title || ' : ' || film.description || ' : ' || category.name AS films_made[] 
  []
 
 [11]
-Overfull \hbox (486.516pt too wide) in paragraph at lines 359--359
-[]\TU/lmtt/m/n/10 CREATE TRIGGER film_fulltext_trigger BEFORE INSERT OR UPDATE ON public.film FOR EACH ROW EXECUTE FUNCTION tsvector_update_trigger('fulltext', 'pg_catalog.english', 'title', 'description');[] 
+Overfull \hbox (580.28078pt too wide) in paragraph at lines 358--358
+[]\TU/lmtt/m/n/10.95 CREATE TRIGGER film_fulltext_trigger BEFORE INSERT OR UPDATE ON public.film FOR EACH ROW EXECUTE FUNCTION tsvector_update_trigger('fulltext', 'pg_catalog.english', 'title', 'description');[] 
  []
 
-<img/Exercice-6-Comprobation.png, id=202, 1224.575pt x 588.1975pt>
+[12]
+<img/Exercice-6-Comprobation.png, id=207, 1224.575pt x 588.1975pt>
 File: img/Exercice-6-Comprobation.png Graphic file (type png)
 <use img/Exercice-6-Comprobation.png>
-Package luatex.def Info: img/Exercice-6-Comprobation.png  used on input line 395.
+Package luatex.def Info: img/Exercice-6-Comprobation.png  used on input line 394.
 (luatex.def)             Requested size: 612.28601pt x 294.09802pt.
 
-Overfull \hbox (111.80202pt too wide) in paragraph at lines 395--396
+Overfull \hbox (111.80202pt too wide) in paragraph at lines 394--395
  [][] 
  []
 
-[12] [13<./img/Exercice-6-Comprobation.png>]
-<img/Exercice-7-Comprobation.png, id=215, 1225.57875pt x 466.74374pt>
+[13<./img/Exercice-6-Comprobation.png>]
+<img/Exercice-7-Comprobation.png, id=216, 1225.57875pt x 466.74374pt>
 File: img/Exercice-7-Comprobation.png Graphic file (type png)
 <use img/Exercice-7-Comprobation.png>
-Package luatex.def Info: img/Exercice-7-Comprobation.png  used on input line 436.
+Package luatex.def Info: img/Exercice-7-Comprobation.png  used on input line 435.
 (luatex.def)             Requested size: 612.78789pt x 233.37129pt.
 
-Overfull \hbox (112.3039pt too wide) in paragraph at lines 436--437
+Overfull \hbox (112.3039pt too wide) in paragraph at lines 435--436
  [][] 
  []
 
-[14<./img/Exercice-7-Comprobation.png>]
+[14<./img/Exercice-7-Comprobation.png>] [15]
 Chapter 3.
 
-Underfull \hbox (badness 10000) in paragraph at lines 455--461
+Underfull \hbox (badness 10000) in paragraph at lines 454--460
 
  []
 
-[15
+[16
 
 ]
 Chapter 4.
 
-Overfull \hbox (19.1874pt too wide) in paragraph at lines 466--467
-[]\TU/Geist(0)/m/it/10 Post-greSQL. (2023). Post-greSQL: Doc-u-men-ta-tion: 13: CRE-ATE VIEW. Post-greSQL. []$\TU/lmtt/m/n/10 https://www.postgresql.
+Overfull \hbox (1.75012pt too wide) in paragraph at lines 463--464
+[]\TU/Geist(0)/m/it/10.95 Post-greSQL. (2023). Post-greSQL: Doc-u-men-ta-tion: 13: CRE-ATE SE-QUENCE. Post-greSQL. []$\TU/lmtt/m/n/10.95 https:
  []
 
-
-Overfull \hbox (37.56165pt too wide) in paragraph at lines 468--469
-[]\TU/Geist(0)/m/it/10 Samuel Martín Morales. (2023). PostgreSQL-Rent. GitHub. []$\TU/lmtt/m/n/10 https://github.com/Samuelmm15/PostgreSQL-[]Rent.
- []
-
-[16
+[17
 
 ] (./Triggers-and-views-in-SQL.aux)
 
@@ -842,19 +853,19 @@ Package rerunfilecheck Info: File `Triggers-and-views-in-SQL.out' has not change
 )
 
 Here is how much of LuaTeX's memory you used:
- 22600 strings out of 477785
+ 22601 strings out of 477785
  100000,953878 words of node,token memory allocated
  483 words of node memory still in use:
    3 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 10 attribute, 52 glue_spec, 10 attribute_list, 2 write, 5 pdf_action nodes
-   avail lists: 2:792,3:585,4:134,5:1045,6:75,7:6774,8:69,9:319,10:11,11:236
+   avail lists: 2:696,3:644,4:120,5:1548,6:83,7:6197,8:69,9:312,10:11,11:380
  42398 multiletter control sequences out of 65536+600000
- 60 fonts using 4768143 bytes
+ 51 fonts using 4057399 bytes
  105i,7n,115p,679b,472s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></Users/smartin/Library/Fonts/Geist-SemiBold.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmmono12-regular.otf></Users/smartin/Library/Fonts/Geist-Regular.otf>
-Output written on Triggers-and-views-in-SQL.pdf (17 pages, 1104699 bytes).
+Output written on Triggers-and-views-in-SQL.pdf (18 pages, 1104902 bytes).
 
-PDF statistics: 288 PDF objects out of 1000 (max. 8388607)
- 238 compressed objects within 3 object streams
- 59 named destinations out of 1000 (max. 131072)
+PDF statistics: 293 PDF objects out of 1000 (max. 8388607)
+ 242 compressed objects within 3 object streams
+ 60 named destinations out of 1000 (max. 131072)
  184 words of extra memory for PDF output out of 10000 (max. 100000000)
 
