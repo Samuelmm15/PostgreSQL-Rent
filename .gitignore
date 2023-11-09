@@ -1,2 +1,17 @@
 *.vscode
 *.DS_Store
+
+# Archivos y directorios generados por LaTeX
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+*.gz
+*.bbl
+*.blg
+
+# Directorio de compilación
+_build/
